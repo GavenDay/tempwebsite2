@@ -17,10 +17,35 @@
       justify-content: center;
       min-height: 100vh;
     }
+    .advertise-banner {
+      background: linear-gradient(135deg, #e8e8f0, #d8d8e8);
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .advertise-banner p {
+      margin: 0;
+      color: #444;
+      font-size: 1rem;
+    }
+    .advertise-banner a {
+      color: #8F5BDC;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .advertise-banner a:hover {
+      text-decoration: underline;
+    }
     .logo {
       font-size: 4rem;
       font-weight: bold;
       background: linear-gradient(90deg, #8F5BDC, #FF7E29);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin: 0;
@@ -38,6 +63,29 @@
       color: #8F5BDC;
       text-decoration: none;
     }
+    .login-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #8F5BDC, #FF7E29);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .login-btn:hover {
+      transform: scale(1.05);
+    }
+    .login-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
     .status {
       margin-top: 3rem;
       font-style: italic;
@@ -46,19 +94,30 @@
   </style>
 </head>
 <body>
+  <div class="advertise-banner">
+    <p>Want to advertise through Ad-It? <a href="/advertise.html">Click here</a></p>
+  </div>
+  
   <main>
     <h1 class="logo">Ad-It</h1>
     <p class="tagline">Advertising through you, not to you.</p>
     
+    <div class="login-buttons">
+      <a href="/login.html" class="login-btn">User Login</a>
+      <a href="/client-login.html" class="login-btn">Client Login</a>
+    </div>
+    
     <section class="contact">
       <p>Contact us: <a href="mailto:info@ad-it.ai">info@ad-it.ai</a></p>
     </section>
-    
-    <p class="status">🚧 This site is under development 🚧</p>
   </main>
   <footer style="margin-top:3rem;font-size:.95rem">
+    <a href="/about.html">About Us</a> ·
+    <a href="/blog.html">Blog</a> ·
     <a href="/legal/tos.html">Terms of Service</a> ·
     <a href="/legal/privacy.html">Privacy Policy</a>
+    <br>
+    <span style="color:#666;font-size:0.85rem;margin-top:0.5rem;display:inline-block">© 2025 Ad-It LLC. All rights reserved.</span>
   </footer>
 </body>
 </html>

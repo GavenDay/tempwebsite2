@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Ad-It Works: Powered by Google Cloud Platform - Ad-It Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #222;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #8F5BDC, #FF7E29);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+    .article {
+      background: white;
+      border-radius: 8px;
+      padding: 3rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .article h1 {
+      color: #8F5BDC;
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      line-height: 1.2;
+    }
+    .article h2 {
+      color: #8F5BDC;
+      font-size: 1.75rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .article h3 {
+      color: #FF7E29;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    .article p {
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .article ul {
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #444;
+      padding-left: 2rem;
+    }
+    .article li {
+      margin-bottom: 0.75rem;
+    }
+    .article strong {
+      color: #8F5BDC;
+      font-weight: 600;
+    }
+    .article em {
+      color: #FF7E29;
+      font-style: italic;
+    }
+    .highlight {
+      background: linear-gradient(135deg, #f8f4ff, #fff5f0);
+      padding: 1.5rem;
+      border-left: 4px solid #8F5BDC;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+    .workflow {
+      background: #f0f0f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      text-align: center;
+      font-family: monospace;
+      font-size: 1rem;
+      color: #8F5BDC;
+      font-weight: bold;
+    }
+    .tech-list {
+      background: #f9f9ff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+    .back-link {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .back-link a {
+      color: #8F5BDC;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 1rem;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #8F5BDC;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="/blog.html" style="text-decoration: none;">
+        <h1 class="logo">Ad-It</h1>
+      </a>
+    </div>
+
+    <article class="article">
+      <h1>How Ad-It Works: Powered by Google Cloud Platform (GCP)</h1>
+
+      <p>Ad-It is built from the ground up as a <strong>cloud-native, AI-driven platform</strong> and Google Cloud provides the ideal foundation for everything we do. Our system depends on fast media processing, large-scale AI inference, secure data handling, and global reliability. GCP enables all of this seamlessly.</p>
+
+      <h2>High-Level Overview</h2>
+
+      <p>Ad-It uses Google Cloud to manage every stage of the workflow:</p>
+
+      <div class="workflow">
+        media upload → AI analysis → data processing → product matching → ad-injection → creator preview
+      </div>
+
+      <p>With GCP, each stage scales independently, processes efficiently, and maintains the reliability required to analyze and transform thousands of user-generated videos.</p>
+
+      <h2>GCP + Ad-It: Why the Architecture Fits Perfectly</h2>
+
+      <h3>1. AI-Optimized Media Processing (Vertex AI / GPU-backed compute)</h3>
+
+      <p>Ad-It relies heavily on computer vision, multimodal AI, and embedding-based matching. GCP's <strong>Vertex AI</strong> and GPU-enabled services give us the power to:</p>
+
+      <div class="tech-list">
+        <ul>
+          <li>Run analysis</li>
+          <li>Extract objects, scenes, and quality metrics</li>
+          <li>Build creator interest profiles</li>
+          <li>Generate placement recommendations</li>
+        </ul>
+      </div>
+
+      <p>All while keeping costs predictable and scaling usage automatically.</p>
+
+      <h3>2. Event-Driven, Microservice Architecture (Cloud Run + Pub/Sub)</h3>
+
+      <p>Ad-It's architecture is fully microservice-oriented.</p>
+
+      <p><strong>Cloud Run</strong> runs every service independently.</p>
+
+      <p><strong>Pub/Sub</strong> connects them with event-driven queues, making the entire pipeline resilient and asynchronous.</p>
+
+      <div class="highlight">
+        <p style="margin:0;">This structure perfectly mirrors Google Cloud's strengths: <strong>stateless compute, fast spin-up, and effortless scaling during traffic spikes.</strong></p>
+      </div>
+
+      <h3>3. Secure, Global Media Storage (Cloud Storage)</h3>
+
+      <p>Every image or video uploaded to Ad-It begins in <strong>Cloud Storage</strong>, where GCP's performance and security give us:</p>
+
+      <div class="tech-list">
+        <ul>
+          <li>Fast upload and download times</li>
+          <li>Cost-efficient large media storage</li>
+          <li>Automatic regional redundancy</li>
+        </ul>
+      </div>
+
+      <p>This aligns directly with our need to process thousands of pieces of creator content reliably.</p>
+
+      <h3>4. High-Speed Data Analysis and Usage Optimization (BigQuery)</h3>
+
+      <p><strong>BigQuery</strong> allows us to:</p>
+
+      <div class="tech-list">
+        <ul>
+          <li>Store anonymized creator profiles</li>
+          <li>Analyze advertiser performance</li>
+          <li>Track insertion quality metrics</li>
+          <li>Feed insights to AI Learning</li>
+        </ul>
+      </div>
+
+      <p>This turns Ad-It's huge volume of media data into actionable intelligence with minimal overhead.</p>
+
+      <h3>5. Reliability, Security, and Compliance Built-In</h3>
+
+      <p>Because Ad-It handles media, user data, advertiser assets, and payment-related analytics, we require:</p>
+
+      <div class="tech-list">
+        <ul>
+          <li>SOC2-ready infrastructure</li>
+          <li>GDPR-friendly data practices</li>
+          <li>Strong IAM and permissions</li>
+          <li>Encryption at rest and in transit</li>
+        </ul>
+      </div>
+
+      <p>Google Cloud's native compliance stack allows Ad-It to meet these requirements without building them ourselves.</p>
+
+      <h2>Why Google Cloud Is the Perfect Fit for Ad-It</h2>
+
+      <p>Ad-It was designed for:</p>
+
+      <div class="tech-list">
+        <ul>
+          <li>High volumes of short-form content</li>
+          <li>Heavy AI workloads</li>
+          <li>Event-driven processing</li>
+          <li>Global creator and advertiser usage</li>
+        </ul>
+      </div>
+
+      <p>Google Cloud provides exactly what our platform demands:</p>
+
+      <div class="tech-list">
+        <ul>
+          <li>High-performance AI tools</li>
+          <li>Microservice-friendly compute</li>
+          <li>Global infrastructure</li>
+          <li>Top-tier security</li>
+          <li>Low operational overhead</li>
+        </ul>
+      </div>
+
+      <div class="highlight">
+        <p style="margin:0;font-size:1.2rem;"><strong>In short: Ad-It's architecture is tailor-made for GCP — and GCP is the ideal engine powering our AI-driven ad placement ecosystem.</strong></p>
+      </div>
+    </article>
+
+    <div class="back-link">
+      <a href="/blog.html">← Back to Blog</a>
+      <a href="/">Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/about.html">About Us</a> ·
+    <a href="/blog.html">Blog</a> ·
+    <a href="/legal/tos.html">Terms of Service</a> ·
+    <a href="/legal/privacy.html">Privacy Policy</a>
+    <br>
+    <span style="color:#666;font-size:0.85rem;margin-top:0.5rem;display:inline-block">© 2025 Ad-It LLC. All rights reserved.</span>
+  </footer>
+</body>
+</html>

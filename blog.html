@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Ad-It.ai</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .header {
+      text-align: center;
+      padding: 3rem 0 2rem;
+    }
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #8F5BDC, #FF7E29);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+    .blog-title {
+      font-size: 2rem;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+    .blog-list {
+      display: grid;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .blog-card h2 {
+      color: #8F5BDC;
+      margin-top: 0;
+      font-size: 1.75rem;
+    }
+    .blog-card .subtitle {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .blog-card .excerpt {
+      color: #444;
+      line-height: 1.6;
+    }
+    .blog-card .read-more {
+      color: #FF7E29;
+      font-weight: bold;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+    .back-link {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .back-link a {
+      color: #8F5BDC;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #8F5BDC;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="logo">Ad-It</h1>
+      <p class="blog-title">Blog</p>
+    </div>
+
+    <div class="blog-list">
+      <a href="/blog/founding-story.html" class="blog-card">
+        <h2>The Founding Story of Ad-It</h2>
+        <p class="subtitle">How a midnight spark became a breakthrough in AI-driven advertising</p>
+        <p class="excerpt">
+          Ad-It began with an unexpected moment of clarity. One night, founder Gaven Day woke up in 
+          the middle of the night with a fully formed idea running through his mind — a vision of a 
+          platform where advertising didn't interrupt people, but lived naturally inside the content 
+          they already created...
+        </p>
+        <span class="read-more">Read More →</span>
+      </a>
+
+      <a href="/blog/how-adit-works-gcp.html" class="blog-card">
+        <h2>How Ad-It Works: Powered by Google Cloud Platform</h2>
+        <p class="subtitle">Our cloud-native, AI-driven architecture built on GCP</p>
+        <p class="excerpt">
+          Ad-It is built from the ground up as a cloud-native, AI-driven platform and Google Cloud 
+          provides the ideal foundation for everything we do. Our system depends on fast media 
+          processing, large-scale AI inference, secure data handling, and global reliability. 
+          GCP enables all of this seamlessly...
+        </p>
+        <span class="read-more">Read More →</span>
+      </a>
+    </div>
+
+    <div class="back-link">
+      <a href="/">← Back to Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/about.html">About Us</a> ·
+    <a href="/legal/tos.html">Terms of Service</a> ·
+    <a href="/legal/privacy.html">Privacy Policy</a> ·
+    <a href="/">Home</a>
+    <br>
+    <span style="color:#666;font-size:0.85rem;margin-top:0.5rem;display:inline-block">© 2025 Ad-It LLC. All rights reserved.</span>
+  </footer>
+</body>
+</html>

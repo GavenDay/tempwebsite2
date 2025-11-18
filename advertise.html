@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertise with Ad-It</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #2c2c2c;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .form-container {
+      background: #e8e8f0;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 600px;
+      position: relative;
+    }
+    .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #666;
+      padding: 0.5rem;
+      line-height: 1;
+    }
+    .close-btn:hover {
+      color: #222;
+    }
+    .form-container h2 {
+      color: #222;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.75rem;
+    }
+    .form-container .subtitle {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #222;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #c8c8d8;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      background: white;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #8F5BDC;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .submit-btn {
+      width: auto;
+      padding: 0.9rem 2.5rem;
+      background: #8F5BDC;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+      float: right;
+    }
+    .submit-btn:hover {
+      transform: scale(1.02);
+      background: #7a4bc0;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-link a {
+      color: #8F5BDC;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .form-container {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <button class="close-btn" onclick="window.location.href='/'">✕</button>
+    
+    <h2>Advertise with Ad-It</h2>
+    <p class="subtitle">Fill in your Business Information and we will verify your request. Upon the completion of verification an email will be sent to the email you entered with a link to the Ad-It Client Portal and an access code.</p>
+    
+    <form id="advertiseForm" method="POST" action="mailto:info@ad-it.ai" enctype="text/plain">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="businessName">Business Name</label>
+          <input type="text" id="businessName" name="Business Name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="businessWebsite">Business Website</label>
+          <input type="url" id="businessWebsite" name="Business Website" placeholder="https://example.com">
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="First Name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="Last Name" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="businessEmail">Business Email</label>
+          <input type="email" id="businessEmail" name="Business Email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="businessPhone">Business Phone Number</label>
+          <input type="tel" id="businessPhone" name="Business Phone">
+        </div>
+      </div>
+      
+      <div class="form-group full-width">
+        <label for="businessAddress">Business Address</label>
+        <textarea id="businessAddress" name="Business Address"></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit for Verification</button>
+      <div style="clear: both;"></div>
+    </form>
+  </div>
+  
+  <div class="back-link">
+    <a href="/">← Back to Home</a>
+  </div>
+  
+  <footer style="margin-top:2rem;font-size:0.85rem;color:#999;text-align:center">
+    © 2025 Ad-It LLC. All rights reserved.
+  </footer>
+</body>
+</html>
