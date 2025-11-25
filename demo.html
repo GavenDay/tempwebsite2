@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo - Ad-It</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #222;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #8F5BDC, #FF7E29);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+    .content {
+      background: white;
+      border-radius: 8px;
+      padding: 3rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    .content h1 {
+      color: #8F5BDC;
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    .content .subtitle {
+      color: #666;
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .video-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #8F5BDC, #FF7E29);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 4rem 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .description {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #444;
+      margin: 2rem 0;
+    }
+    .back-link {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .back-link a {
+      color: #8F5BDC;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 1rem;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #8F5BDC;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="/" style="text-decoration: none;">
+        <h1 class="logo">Ad-It</h1>
+      </a>
+    </div>
+
+    <div class="content">
+      <h1>Platform Demo</h1>
+      <p class="subtitle">See Ad-It in action</p>
+
+      <!-- Video Placeholder - Replace this section with your actual video -->
+      <div class="video-placeholder">
+        Demo Video Coming Soon
+      </div>
+
+      <!-- Uncomment and use this when you have a video URL:
+      <div class="video-container">
+        <iframe src="YOUR_VIDEO_URL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      -->
+
+      <!-- Or for a local video file:
+      <div class="video-container">
+        <video controls>
+          <source src="/path/to/your/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      -->
+
+      <div class="description">
+        <p>Discover how Ad-It transforms the advertising experience by empowering creators and connecting brands with engaged audiences.</p>
+        <p>Our platform leverages cutting-edge AI and cloud infrastructure to deliver personalized, non-intrusive advertising that benefits everyone in the ecosystem.</p>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="/">← Back to Home</a>
+      <a href="/about.html">About Us</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/about.html">About Us</a> ·
+    <a href="/team.html">Team</a> ·
+    <a href="/demo.html">Demo</a> ·
+    <a href="/blog.html">Blog</a> ·
+    <a href="/legal/tos.html">Terms of Service</a> ·
+    <a href="/legal/privacy.html">Privacy Policy</a>
+    <br>
+    <span style="color:#666;font-size:0.85rem;margin-top:0.5rem;display:inline-block">© 2025 Ad-It LLC. All rights reserved.</span>
+  </footer>
+</body>
+</html>
